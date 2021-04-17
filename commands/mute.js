@@ -4,6 +4,9 @@ module.exports = {
   name: 'mute',
   description: "mutes the guy",
   async execute(message, args){
+            if (!message.member.hasPermission("BAN_MEMBERS")) {
+            return message.reply("Missing Permissions!").then(m => m.delete(5000));
+        }
         const target = message.mentions.users.first();
         if (target) {
  
