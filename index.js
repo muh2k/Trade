@@ -65,4 +65,4 @@ client.on("message", async message => {
     })
 
 
-    client.login('ODMzMDI5NzAxMDg1NDI5Nzcx.YHsZXQ.Yy9CAwHKroEArxIqB3BjRPisjr0');
+    client.login('your discord bot token here');
